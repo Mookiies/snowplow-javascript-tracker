@@ -41,7 +41,7 @@ type SetPropertiesAsNonNullable<Obj, Properties extends keyof Obj> = Omit<Obj, P
   [K in Properties]-?: NonNullable<Obj[K]>;
 };
 
-type Configuration = TrackerConfiguration &
+export type Configuration = TrackerConfiguration &
   EmitterConfiguration &
   SessionConfiguration &
   SubjectConfiguration &
